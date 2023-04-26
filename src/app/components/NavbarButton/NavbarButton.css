@@ -1,0 +1,39 @@
+.navbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-button::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  transform: skewX(-16deg);
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  transition: .3s,all
+}
+
+.navbar-button::after{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: calc(100% + 8px);
+  height: calc(100% + 0px);
+  transform: skewX(-25deg);
+  background-color: white;
+}
+
+.navbar-button:hover::before{
+  background-color: black;
+  transition: .3s, background-size .3s .3s;
+}
+
+.navbar-button:hover::after{
+  transition: .3s, background-size .3s .3s; 
+  rotate: 180deg;
+}

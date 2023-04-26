@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  /* font-family: 'Gruppo', Tahoma, Geneva, Verdana, sans-serif; */
+  --custom-bg-color : #151019
+}
