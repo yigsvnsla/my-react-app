@@ -1,6 +1,6 @@
 
 import { ElementRef, useEffect, useLayoutEffect, useRef, useState } from 'react'
-import NavbarButton from '../NavbarButton/NavbarButton'
+import NavbarButton from '../../components/NavbarButton/NavbarButton'
 import './Navbar.css'
 
 
@@ -15,11 +15,10 @@ function Navbar() {
   // },[openNavbar]);
 
   return (
-
-    <nav
-      className='
-        bg-transparent
-        relative
+    <div className='w-full bg-white shadow-2xl '>
+      <nav
+        className='
+        
         z-10
         font-Goldman 
         text-black 
@@ -29,56 +28,57 @@ function Navbar() {
         flex
         justify-between
         overflow-hidden
-    '>
-      <a 
-        href="#"
-        className='
+        '>
+        <a
+          href="#"
+          className='
           hidden
           sm:flex
           sm:items-center'
-      >
-        <img 
-          src="../../../../nutriaSoft.svg" 
-          alt="" 
-          className='
+        >
+          <img
+            src="../../../../nutriaSoft.svg"
+            alt=""
+            className='
             h-16
             object-cover
             
-
-        '/>
-        <span
-          className='
+            '/>
+          <span
+            className='
             font-extrabold 
             text-4xl
             leading-tight
         '>NutriaSoft</span>
-      </a>
-        <div className='container'>
-          <ul 
+        </a>
+        <div className='w-full flex flex-col justify-center'>
+          <ul
             className="
-              
               flex
               flex-row
               justify-around
               items-center
-              sm:text-xl
-              sm:space-x-8 
-            ">
+              space-x-3
+              md:text-xl
+              md:space-x-8 
+              sm:justify-end
+              ">
             <li className='relative'>
-              <NavbarButton title='Home'/>
+              <NavbarButton title='Home' />
             </li>
             <li className='relative'>
-              <NavbarButton title='Services'/>
+              <NavbarButton title='Services' />
             </li>
             <li className='relative'>
-              <NavbarButton title='Pricing'/>
+              <NavbarButton title='Pricing' />
             </li>
             <li className='relative'>
-              <NavbarButton title='Contact'/>
+              <NavbarButton title='Contact' />
             </li>
           </ul>
         </div>
-    </nav>
+      </nav>
+    </div>
   )
 }
 

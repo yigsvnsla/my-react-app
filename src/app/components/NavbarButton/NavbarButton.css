@@ -9,31 +9,44 @@
   display: block;
   position: absolute;
   z-index: -1;
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
+  width: 78%;
+  height: calc(100% + -12px);
   transform: skewX(-16deg);
   background-size: 100% 100%;
   background-position: 0px 0px;
-  transition: .3s,all
 }
 
-.navbar-button::after{
+.navbar-button::after {
   content: '';
   display: block;
   position: absolute;
   z-index: -1;
-  width: calc(100% + 8px);
-  height: calc(100% + 0px);
+  width: 80px;
+  height: 18px;
   transform: skewX(-25deg);
   background-color: white;
 }
 
-.navbar-button:hover::before{
+.navbar-button:hover::before {
   background-color: black;
   transition: .3s, background-size .3s .3s;
 }
 
-.navbar-button:hover::after{
-  transition: .3s, background-size .3s .3s; 
+.navbar-button:hover::after {
+  transition: .3s, background-size .3s .3s;
   rotate: 180deg;
+}
+
+@media (min-width: 768px) {
+  .navbar-button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 78%;
+    height: 100% ;
+    transform: skewX(-16deg);
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+  }
 }

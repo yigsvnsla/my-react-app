@@ -7,7 +7,7 @@ type NavbarButtonProps =  Partial<{
 }>
 
 function NavbarButton({title}:NavbarButtonProps) {
-  return (<a className='navbar-button p-2  md:p-5' href="#">{title}</a>)
+  return (<a className='navbar-button p-2  md:p-0' href="#">{title}</a>)
 }
 
 export default NavbarButton

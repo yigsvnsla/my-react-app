@@ -1,16 +1,22 @@
 
 import './App.css'
-import Banner from './components/Banner/Banner'
-import Navbar from './components/Navbar/Navbar'
-import CardProfile from './components/Card/Card-profile'
+import Banner from './layouts/Banner/Banner'
+import Navbar from './layouts/Navbar/Navbar'
+import About from './layouts/About/About'
+import Services from './layouts/Services/Services'
+import Footer from './layouts/Footer/Footer'
+import Form from './contact/Form'
 
 
-function App() {  
+function App() {
   return (
-    <div className="h-screen">
-      <Navbar/>
-      <Banner/>
-
+    <div className="">
+      <Navbar />
+      {/* <Banner /> */}
+      <About />
+      <Services/>
+      {/* <Form/> */}
+      <Footer/>
     </div>
   )
 }
